@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+.html, body{
+	background-color:#FFECAE;
+	margin:0;
+}
+.html, h1{
+	color:#FFECAE;
+	text-align:center;
+	font-weight:bold;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:60px;
+	margin:0;
+	padding-bottom:5px;
+}
+#header {
+	background-color:#FFDD6B;
+	width:100%;
+}
+#input_container{
+	position:absolute;
+	width:500px;
+	margin-left:-250px;
+	left:50%;
+	margin-top:20px;
+	text-align:center;
+}

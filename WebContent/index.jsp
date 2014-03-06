@@ -4,9 +4,26 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Length converter</title>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<div id="header">
+	<h1>LENGTH CONVERTER</h1>
+</div>
+<div id="input_container">
+	<form id="input_form" action="result.jsp" method="get">
+		Convert
+		<input type="text" name="input_length">
+		meters to
+		<select name="example">
+		    <option value="A">centimeters</option>
+		    <option value="B">kilometers</option>
+		    <option value="-">miles</option>
+		</select>
+		<input type="submit" name="btnSubmit" value="Convert">
+	</form>
+</div>
 
 </body>
 </html>
