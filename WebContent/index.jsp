@@ -14,16 +14,25 @@
 <div id="input_container">
 	<form id="input_form" action="result.jsp" method="get">
 		Convert
-		<input type="text" name="input_length">
-		meters to
-		<select name="example">
-		    <option value="A">centimeters</option>
-		    <option value="B">kilometers</option>
-		    <option value="-">miles</option>
-		</select>
+		<input type="text" name="meters" onkeypress="validateNumber(event)">
+		meter(s) to
+		<select name="unit">
+		    <option value="1">centimeters</option>
+		    <option value="2">kilometers</option>
+		    <option value="3">miles</option>
+		</select><br/><br/>
 		<input type="submit" name="btnSubmit" value="Convert">
 	</form>
 </div>
-
+<script>
+function validateNumber(evt) {
+	  var theEvent = evt || window.event;
+	  var key = theEvent.keyCode || theEvent.which;
+	  if ((key < 48 || key > 57) && !(key == 8 || key == 9 || key == 13 || key == 37 || key == 39 || key == 46) ){
+	    theEvent.returnValue = false;
+	    if (theEvent.preventDefault) theEvent.preventDefault();
+	  }
+	}
+</script>
 </body>
 </html>
